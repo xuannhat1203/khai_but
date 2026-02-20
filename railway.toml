@@ -1,0 +1,10 @@
+# Railway: dự án dùng Dockerfile nên file này chỉ để tham khảo.
+# Nếu xóa Dockerfile, Railway sẽ dùng Nixpacks và có thể cần:
+# [build]
+# builder = "nixpacks"
+# [deploy]
+# startCommand = "java -jar build/libs/khaibut-0.0.1-SNAPSHOT.jar"
+
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
